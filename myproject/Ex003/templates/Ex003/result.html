@@ -1,0 +1,12 @@
+{% extends 'Ex003/index.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h1>Результат:</h1>
+    <ul>
+    {% for item in result %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}  
